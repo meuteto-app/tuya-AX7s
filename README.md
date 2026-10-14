@@ -168,8 +168,5 @@ So the mic and speaker are reachable from your own ALSA program once `ipphone` i
 - [x] Identify SoC (Allwinner V316 / sun8iw19), get UART root shell, map system.
 - [ ] Firmware dump (partitions) — pending a transfer method (busybox has no `dd`/`base64`/`nc`;
       options: UART raw with `stty`, a microSD card, or rebuilt tools).
-- [ ] Local two-way audio bridge: a small static ARMv7 (`GOARCH=arm GOARM=7 CGO_ENABLED=0`, or
-      zig `arm-linux-musleabihf`) ALSA↔network daemon; stop `ipphone`, run it, talk over the LAN —
-      fully local, no cloud.
 
 Contributions welcome if you have the same or a similar `AX7s` / Allwinner V316 Tuya doorbell.
