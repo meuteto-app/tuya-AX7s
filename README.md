@@ -166,7 +166,8 @@ So the mic and speaker are reachable from your own ALSA program once `ipphone` i
 ## Status / TODO
 
 - [x] Identify SoC (Allwinner V316 / sun8iw19), get UART root shell, map system.
-- [ ] Firmware dump (partitions) — pending a transfer method (busybox has no `dd`/`base64`/`nc`;
-      options: UART raw with `stty`, a microSD card, or rebuilt tools).
+- [x] Firmware dump — generic partitions published under [`firmware/`](firmware/) (uboot, kernel,
+      squashfs rootfs). Dumped with `cat /dev/mtdblockN` to a microSD (busybox has `mount` +
+      `mkfs.vfat`). Per-device partitions (overlay/env/id/private/UDISK) are kept out.
 
 Contributions welcome if you have the same or a similar `AX7s` / Allwinner V316 Tuya doorbell.
