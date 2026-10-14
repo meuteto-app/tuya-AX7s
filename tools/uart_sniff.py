@@ -10,8 +10,8 @@ Two modes:
 Only listens: the FT232 TX pin stays disconnected, nothing is sent.
 
 Usage:
-  uvx --with pyserial python source/tools/uart_sniff.py probe
-  uvx --with pyserial python source/tools/uart_sniff.py capture --baud 115200
+  uvx --with pyserial python tools/uart_sniff.py probe
+  uvx --with pyserial python tools/uart_sniff.py capture --baud 115200
 """
 import argparse
 import datetime
